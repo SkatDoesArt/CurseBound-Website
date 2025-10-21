@@ -1,0 +1,368 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CurseBound</title>
+        <link rel="website-icon" type="png" href="/reference/cb_logo.png">
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/comstyle.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <!-- JavaScripts -->
+        <script type="text/javascript" src="JS/lightmode.js" defer></script>
+        <script type="text/javascript" src="JS/parallax.js" defer></script>
+        <script type="text/javascript" src="JS/com.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <ul>
+                    <li class="cb_logo">
+                        <a href="Index.html">
+                            <img src="reference/cb_logo.png" alt="logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Index.html#space-body">☆LORE☆</a>
+                    </li>
+                    <li>
+                        <a href="Index.html#perso">Character</a>
+                    </li>
+                    <li>
+                        <a href="Index.html#surnous">About☆Us</a>
+                    </li>
+                    <li class="log">
+                        <a href="login_out.html">Connexion</a>
+                    </li>
+                    <li class="deroulant" id="menu"> Menu
+                        <ul>
+                            <li class="shop-item">
+                                <a href="shop.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M230.14,58.87A8,8,0,0,0,224,56H62.68L56.6,22.57A8,8,0,0,0,48.73,16H24a8,8,0,0,0,0,16h18L67.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,160,204a28,28,0,1,0,28-28H91.17a8,8,0,0,1-7.87-6.57L80.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,230.14,58.87ZM104,204a12,12,0,1,1-12-12A12,12,0,0,1,104,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,200,204Zm4-74.57A8,8,0,0,1,196.1,136H77.22L65.59,72H214.41Z"></path></svg>
+                                    Shop
+                                </a>
+                            </li>
+                            <li class="req-item">
+                                <a href="request.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M229.66,58.34l-32-32a8,8,0,0,0-11.32,0l-96,96A8,8,0,0,0,88,128v32a8,8,0,0,0,8,8h32a8,8,0,0,0,5.66-2.34l96-96A8,8,0,0,0,229.66,58.34ZM124.69,152H104V131.31l64-64L188.69,88ZM200,76.69,179.31,56,192,43.31,212.69,64ZM224,128v80a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V48A16,16,0,0,1,48,32h80a8,8,0,0,1,0,16H48V208H208V128a8,8,0,0,1,16,0Z"></path></svg>
+                                    Request
+                                </a>
+                            </li>
+                            <li class="com-item">
+                                <a href="com.html" class="coom">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M116,120a12,12,0,1,1,12,12A12,12,0,0,1,116,120ZM84,132a12,12,0,1,0-12-12A12,12,0,0,0,84,132Zm88,0a12,12,0,1,0-12-12A12,12,0,0,0,172,132Zm60-76V184a16,16,0,0,1-16,16H155.57l-13.68,23.94a16,16,0,0,1-27.78,0L100.43,200H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56Zm-16,0H40V184h65.07a8,8,0,0,1,7,4l16,28,16-28a8,8,0,0,1,7-4H216Z"></path></svg>
+                                    Comments
+                                </a>
+                            </li>
+                            <li class="switch-indic">
+                                <a id="toggle_text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z"></path></svg>
+                                    Switch Mode
+                                </a>
+                                <div id="toggle">
+                                    <button id="theme-switch">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#575757"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div id="espace">
+
+        </div>
+        <div id="body">
+            <div class="navbarcom">
+                <button id="showAllComments">All Comments</button>
+                <button id="showTopComments">Top Comments</button>
+            </div>
+
+            <div class="comsection">
+                <div class="topcom">
+                    <div id="commentCountTop" class="comment-count">
+                        Total Comments: <span id="totalCommentsTop">0</span>
+                    </div>
+                    <form>
+                        <div id="commentairebrefdebut">
+                            <div class="date">
+                                <p class="p1"></p>
+                            </div>
+                            <p class="commentairedebut">C nul. 0/20</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon_chk.png" class="dechk_top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p2"></p>
+                            </div>
+                            <p class="commentaire">Is it available in English ? The story look very nice, but I can't read French</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon_chk.png" class="dechk_top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p2"></p>
+                            </div>
+                            <p class="commentaire">Le comic est trop bien, je l'ai dévoré en une soirée. Quand est-ce que sort le prochain chapitre ?</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon_chk.png" class="dechk_top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p3"></p>
+                            </div>
+                            <p class="commentaire">J'AI ADORÉ C'EST TROP BIEEEEN ! Est-ce qu'il y a un Patreon ou un moyen de soutenir les artistes ?!?!?</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon_chk.png" class="dechk_top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p3"></p>
+                            </div>
+                            <p class="commentaire">OMG je suis rendu au moment où ils se font trahir, j'ai trop peur. 
+                                <br> SVP que quelqu'un me dise qu'ils vont bien j'ose pas continuer</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon_chk.png" class="dechk_top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p3"></p>
+                            </div>
+                            <p class="commentaire">C'est ok si je smash un peu jiyu ?</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon_chk.png" class="dechk_top_icon">
+                                <img src="reference/icons/like_icon.png"  class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p4"></p>
+                            </div>
+                            <p class="commentaire">Athos est mon personnage préféré.
+                                <br> Le mec il a toujours l'air stoïque mais ça se voit qu'il tient au autres.
+                                <br> Je l'adore</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon_chk.png" class="dechk_top_icon">
+                                <img src="reference/icons/like_icon.png"  class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p5"></p>
+                            </div>
+                            <p class="commentaire">Heeey, où est-ce que je peux faire un dont ?</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon_chk.png" class="dechk_top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p1"></p>
+                            </div>
+                            <p class="commentaire">L'histoire passe, mais les dessins sont  vraiment pas ouf</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon_chk.png" class="dechk_top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p1"></p>
+                            </div>
+                            <p class="commentaire">J'adore le style, est-ce que vous êtes ouvert pour des commissions ?</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon_chk.png" class="dechk_top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebreffin">
+                            <div class="date">
+                                <p class="p1"></p>
+                            </div>
+                            <p class="commentairefin">Le comic a l'air bien, j'en entends souvent parler.
+                                <br>  Est-ce que vous pensez que je pourrais aimer ?
+                                <br> PS: j'ai regardé Frieren, Laufeust de troy, Dragon, …</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon_chk.png" class="dechk_top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="allcom">
+                    <div id="commentCountAll" class="comment-count">
+                        Total Comments: <span id="totalCommentsAll">0</span>
+                    </div>
+                    <form>
+                        <div id="commentairebrefdebut">
+                            <div class="date">
+                                <p class="p5"></p>
+                            </div>
+                            <p class="commentairedebut">A</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon.png" class="top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p5"></p>
+                            </div>
+                            <p class="commentaire">B</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon.png" class="top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p4"></p>
+                            </div>
+                            <p class="commentaire">C</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon.png" class="top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p4"></p>
+                            </div>
+                            <p class="commentaire">D</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon.png" class="top_icon">
+                                <img src="reference/icons/like_icon.png"  class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p3"></p>
+                            </div>
+                            <p class="commentaire">E</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon.png" class="top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p2"></p>
+                            </div>
+                            <p class="commentaire">F</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon.png" class="top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p2"></p>
+                            </div>
+                            <p class="commentaire">G</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon.png" class="top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p2"></p>  
+                            </div>
+                            <p class="commentaire">H</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon.png" class="top_icon">
+                                <img src="reference/icons/like_icon.png"  class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p1"></p>
+                            </div>
+                            <p class="commentaire">I</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon.png" class="top_icon">
+                                <img src="reference/icons/like_icon.png" class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebref">
+                            <div class="date">
+                                <p class="p1"></p>
+                            </div>
+                            <p class="commentaire">J</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon.png" class="top_icon">
+                                <img src="reference/icons/like_icon.png"  class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                        <div id="commentairebreffin">
+                            <div class="date">
+                                <p class="p1"></p>
+                            </div>
+                            <p class="commentairefin">wow</p>
+                            <div class="like">
+                                <img src="reference/icons/top_icon.png" class="top_icon">
+                                <img src="reference/icons/like_icon.png"  class="like_icon">
+                                <img src="reference/icons/dislike_icon.png" class="dislike_icon">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--Barre de com-->
+            <div class="comment-bar">
+                <textarea id="commentInput" placeholder="Write your comment here..."></textarea>
+                <button type="button" id="submitComment">Send</button>
+            </div>
+
+        </div>
+
+
+    </body>
+    </html>

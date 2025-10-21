@@ -1,0 +1,19 @@
+@media screen and (max-width : 364px) {
+
+    .navbar > ul > li:not(#burger) {
+        display: none;
+    }
+
+    #menu ul {
+        display: block;
+        position: static;
+        width: auto;
+        height: auto;
+    }
+
+    #menu ul li {
+        display: block;
+        padding: 10px 0;
+    }
+    
+}

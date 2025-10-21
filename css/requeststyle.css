@@ -1,0 +1,81 @@
+#body {
+    display: block;
+    margin: auto;
+    margin-top: 11%;
+    margin-bottom: 4%;
+    width: 80%;
+}
+
+#body * {
+    font-family: "Bungee Hairline", sans-serif !important;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#body label, #pict {
+    color: var(--text-color) !important;
+}
+
+#infos {
+    display: flex;
+    margin-bottom: 2%;
+    flex-direction: row;
+}
+
+/* Picture Part */
+
+#picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#picture img {
+    width: 306px;
+    height: 306px;
+    padding: 2%;
+    border: 2px solid var(--text-color);
+    object-fit: cover;
+}
+
+#pict {
+    font-size: small;
+    text-align: center;
+    width: 80%;
+    margin-top: 1%;
+    background-color: var(--secondary-button-color);
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#pict:hover{
+    background-color: var(--primary-button-color);
+    color: black !important;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+#main input {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 200%;
+}
+
+#more-infos, #details {
+    display: flex;
+    flex-direction: column;
+}
+
+#more-infos textarea, #more-infos input, #details textarea, #details input {
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+}

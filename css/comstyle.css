@@ -1,0 +1,251 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: var(--base-color);
+    transition: 0.5s;
+}
+
+#body {
+    margin-top: 7%;
+    margin-bottom: 2%;
+    height: 100%;
+    display: block; 
+    justify-content: center;
+    align-items: center; 
+
+    padding-top: 2%; 
+    background-color: var(--base-color);
+    width: 70%;
+    margin: auto;
+    position:relative;
+}
+
+
+p{
+    font-size: large;
+    line-height: 1;
+    font-style: normal;
+
+    font-family: "Dosis", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+button{
+    font-size: x-large;
+    line-height: 1;
+    font-style: normal;
+
+    font-family: "Dosis", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+/* new */
+.navbarcom {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+
+.navbarcom button {
+    margin: auto;
+    padding: 1% 20%;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+.navbarcom button{
+    background-color: #c7c7c7;
+}
+
+.navbarcom button:hover {
+    background-color: #e0e0e0;
+}
+
+.navbarcom button.active{
+    background-color: rgb(241, 241, 241);
+}
+
+form{
+    background-color: rgb(241, 241, 241);
+}
+.topcom {
+    display: none;
+}
+.allcom{
+    display: block;
+}
+
+p.commentaire{
+    padding: 1%;
+}
+
+p.commentairedebut{
+    padding: 1%;
+    margin-top: 0;
+}
+
+p.commentairefin{
+    padding: 1%;
+}
+
+#commentairebref{
+    border-bottom: 1px solid black;
+}
+#commentairebref > .like{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    padding-right: 2%;
+}
+
+#commentairebrefdebut{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#commentairebrefdebut > .like{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    padding-right: 2%;
+}
+
+#commentairebreffin{
+    border-bottom: 1px solid black;
+}
+#commentairebreffin > .like{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: end;
+    padding-right: 2%;
+}
+
+.date{
+    padding-left: 1%;
+}
+.date > .p1{
+    line-height: 0.5;
+    font-size: 100%;
+    color: #444444;
+}
+.date > .p2{
+    line-height: 0.5;
+    font-size: 100%;
+    color: #444444;
+}
+.date > .p3{
+    line-height: 0.5;
+    font-size: 100%;
+    color: #444444;
+}
+.date > .p4{
+    line-height: 0.5;
+    font-size: 100%;
+    color: #444444;
+}
+.date > .p5{
+    line-height: 0.5;
+    font-size: 100%;
+    color: #444444;
+}
+
+/* pour le nv com */
+.commentairebreffin {
+    border-bottom: 1px solid black;
+}
+
+.commentairebreffin .like {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    padding-right: 2%;
+}
+
+.comment-count {
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #f1f1f1;
+    border-top: 1px solid black;
+}
+
+
+/**/
+
+
+.like img{
+    width: 2%;
+    height: 2%;
+    padding: 1%;
+}
+
+
+
+
+.comment-bar {
+    position: fixed;
+    bottom: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    left: 0;
+    width: 70%;
+    background-color: rgba(241, 241, 241, 0.89); /* Légère transparence pour voir le contenu en dessous */
+    border-top: 1px solid #ccc;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1001; /* Assurez-vous qu'elle est au-dessus des autres éléments */
+}
+
+textarea {
+    width: 80%;
+    height: 10%;
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    margin-left: 2%;
+    font-size: normal;
+    line-height: 1;
+    font-style: normal;
+
+    font-family: "Dosis", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+
+}
+
+#submitComment {
+    padding: 1% 2%;
+    margin-right: 2%;
+    background-color: #c7c7c7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: normal;
+    line-height: 1;
+    font-style: normal;
+    font-family: "Dosis", serif;
+}
+
+#submitComment:hover {
+    background-color: #e0e0e0;
+}

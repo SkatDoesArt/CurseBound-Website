@@ -1,0 +1,361 @@
+:root { /*Darkmode*/
+    --base-color: #0C0C0C;
+    --base-variant: #272727;
+    --text-color: white;
+    --primary-button-color: #c1c4cc;
+    --secondary-button-color: #575757;
+    --background-motif: url(../reference/fondwtf.png);
+}
+
+.lightmode { /*Darkmode*/
+    --base-color: #e6e6e6;
+    --base-variant: #c1c4cc;
+    --text-color: #0C0C0C;
+    --primary-button-color: #575757;
+    --secondary-button-color: #aaaaaa;
+    --background-motif: url(../reference/fondwtf-lightmode_2.png);
+}
+
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: var(--base-color);
+    transition: 0.5s;
+}
+
+/* Navbar */
+.navbar {
+    background-image: var(--background-motif);
+    background-size: cover;
+    z-index: 1000;
+}
+
+
+a:hover {
+    color: var(--secondary-button-color) !important;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color) !important;
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.navbar > ul > li {
+    text-decoration: none;
+    color: var(--text-color) !important;
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    list-style: none;
+    position: relative; /* Ajouté pour le positionnement du menu déroulant */
+}
+
+
+.navbar > ul > li > ul > li {
+    list-style: none;
+    background-color: var(--base-variant);
+}
+
+.navbar > ul > li > ul > li > a {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: lighter;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    user-select: text;
+}
+
+.navbar > ul > li > ul {
+    display: none; /* Cache le menu déroulant par défaut */
+    position: absolute; /* Position absolue par rapport à l'élément parent */
+    top: 100%; /* Positionne le menu juste en dessous du parent */
+    left: 0; /* Aligne le menu sur le côté gauche de l'élément parent */
+    z-index: 1000; /* Assure que le menu est au-dessus des autres éléments */
+    background-color: var(--base-variant); /* Ajout de couleur de fond pour différencier */
+}
+
+.deroulant:hover {
+    color: var(--secondary-button-color) !important;
+}
+
+.navbar > ul > li:hover > ul {
+    display: block; /* Affiche le menu déroulant lorsque l'utilisateur survole le parent */
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar > ul > li {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+
+.navbar {
+    position: fixed;
+    padding-right: 2%;
+    padding-left: 1%;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: space-between;
+    width: 97%;
+    top: 0;
+}
+
+.navbar > ul >.cb_logo {
+    margin-left: 0;
+    padding-top: 1%;
+}
+
+.navbar .log {
+    padding-right: 5%;
+}
+
+#menu li {
+    padding: 2%;
+    padding-right: 80px;
+    text-align: left;
+}
+
+#menu ul {
+    left: -999em; /*ça met l'élément trèèèès loin de la fenètre car trop chiant de faire un truc qui cache*/
+}
+
+#menu:hover ul{
+    display: flex;
+    left: -100%;
+    width: 800%;
+    height: 1000%; /* à modifier en fonstion de la taille de l'écran*/
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li.com-item {
+    padding-bottom: 2%;
+}
+
+#menu li.shop-item {
+    padding-top: 5%;
+}
+
+li#menu.deroulant {
+    margin: 0;
+}
+
+svg {
+    fill: var(--text-color);
+}
+
+#menu.deroulant svg {
+    height: 20px;
+    margin-right: 2%;
+}
+
+li.switch-indic a:hover {
+    color: var(--text-color) !important;
+}
+
+/*Theme Switch*/
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--primary-button-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme-switch svg {
+    fill: white !important;
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.lightmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.lightmode #theme-switch svg:last-child {
+    display: block;
+}
+
+div#toggle {
+    position: relative;
+    display: block;
+    margin-top: 1%;
+    margin-left: 6%;
+    /*margin-left: calc(172% + 10%); /* Assure un alignement vertical et horizontal cohérent */
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: #aaaaaa;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+div#toggle #theme-switch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(to bottom, #0C0C0C, #252525);
+    border-radius: 50%;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.lightmode div#toggle #theme-switch {
+    left: 50%;
+}
+
+
+/*Active/lightmode*/
+
+.lightmode {
+    background: var(--base-color);
+}
+
+.lightmode #body h1, .lightmode #body p {
+    color: var(--text-color);
+}
+
+/* parallax -> acceuil ( sacha )*/
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../reference/imgs/acceuil\ site\ cb.png) no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+#text {
+    position: absolute;
+    font-size: 5vw;
+    color: #0C0C0C;
+    font-family: "Bungee Hairline", sans-serif;
+    margin-top: 10%;
+    margin-left: 2%;
+    
+}
+
+#link {
+    position: absolute;
+    margin-top: 5%;
+    transform: translateY(100px);
+    font-size: 2vw;
+    color: #0C0C0C !important;
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: 600;
+    text-decoration: none; 
+    cursor: pointer; 
+    background-color: #e9e9e9;
+    border-radius: 50px;
+    box-shadow: 0px 10px 30px -5px rgba(122, 122, 122, 0.8);
+    padding-left: 2%;
+    padding-right: 2%
+}
+
+#link:hover {
+    color: rgb(150, 150, 150) !important; 
+}
+
+/* Space-Body */
+
+div#space-body {
+    position: absolute;
+    margin-top: 50%;
+    z-index: -1;
+}
+
+
+/* Bannière de fin */
+footer {
+    margin-top: auto;
+}
+
+#bannerend {
+    background-image: var(--background-motif);
+    background-size: cover;
+}
+
+h1 {
+    font-family: "Bungee Hairline", sans-serif;
+    font-size: 50px;
+    color: var(--text-color);
+    text-align: center;
+    margin: 0;
+}
+
+#contact {
+    font-family: "Bungee Hairline", sans-serif;
+    color: var(--text-color);
+    text-align: center;
+    font-style: oblique;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+#mail {
+    font-family: "Bungee Hairline", sans-serif;
+    color: var(--text-color);
+    text-align: center;
+    font-style: oblique;
+    margin: 0;
+    padding-bottom: 2%;
+    font-weight: light;
+    font-size: medium;
+}
+
+.lightmode #mail {
+    font-weight: bold;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.reseaux svg {
+    height: 50px;
+    width: 50px;
+}

@@ -1,0 +1,391 @@
+<!-- page principal du site composé de : 
+( banniere du haut )
+Acceuil 
+Lore
+Perso sliders
+About US
+Contact us (banniere de fin)-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/indexstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/tel_main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Rubik+Bubbles&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <!--Pour les texte explicatifs ca fait stylé tkt-->
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+    <!-- Pour quelques titre explicatif jsp je teste-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> <!-- POUR LES TITRES IMPACTANT-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- Un autre parce que c'est jamais assez-->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <!--Pour les texte ?-->
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <!--Pour les numero tt en bas-->
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!--Numero encore-->
+    <title>CurseBound</title>
+    <link rel="website-icon" type="png" href="/reference/cb_logo.png">
+
+    <!--parties javascript-->
+    <script type="text/javascript" src="JS/lightmode.js" defer></script>
+    <script type="text/javascript" src="JS/parallax.js" defer></script>
+    <script type="text/javascript" src="JS/cardperso.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <div id="burger">
+                </div>
+                <li class="cb_logo">
+                    <a href="Index.html">
+                        <img src="reference/cb_logo.png" alt="logo">
+                    </a>
+                </li>
+                    <li>
+                        <a href="#space-body">☆LORE☆</a>
+                    </li>
+                    <li>
+                        <a href="#perso">Character</a>
+                    </li>
+                    <li>
+                        <a href="#surnous">About☆Us</a>
+                    </li>
+                    <li class="log">
+                        <a href="login_out.html">Connexion</a>
+                    </li>
+
+
+                <li class="deroulant" id="menu"> Menu
+                    <ul>
+                        <li class="shop-item">
+                            <a href="shop.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M230.14,58.87A8,8,0,0,0,224,56H62.68L56.6,22.57A8,8,0,0,0,48.73,16H24a8,8,0,0,0,0,16h18L67.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,160,204a28,28,0,1,0,28-28H91.17a8,8,0,0,1-7.87-6.57L80.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,230.14,58.87ZM104,204a12,12,0,1,1-12-12A12,12,0,0,1,104,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,200,204Zm4-74.57A8,8,0,0,1,196.1,136H77.22L65.59,72H214.41Z">
+                                    </path>
+                                </svg>
+                                Shop
+                            </a>
+                        </li>
+                        <li class="req-item">
+                            <a href="request.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M229.66,58.34l-32-32a8,8,0,0,0-11.32,0l-96,96A8,8,0,0,0,88,128v32a8,8,0,0,0,8,8h32a8,8,0,0,0,5.66-2.34l96-96A8,8,0,0,0,229.66,58.34ZM124.69,152H104V131.31l64-64L188.69,88ZM200,76.69,179.31,56,192,43.31,212.69,64ZM224,128v80a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V48A16,16,0,0,1,48,32h80a8,8,0,0,1,0,16H48V208H208V128a8,8,0,0,1,16,0Z">
+                                    </path>
+                                </svg>
+                                Request
+                            </a>
+                        </li>
+                        <li class="com-item">
+                            <a href="com.html" class="coom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M116,120a12,12,0,1,1,12,12A12,12,0,0,1,116,120ZM84,132a12,12,0,1,0-12-12A12,12,0,0,0,84,132Zm88,0a12,12,0,1,0-12-12A12,12,0,0,0,172,132Zm60-76V184a16,16,0,0,1-16,16H155.57l-13.68,23.94a16,16,0,0,1-27.78,0L100.43,200H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56Zm-16,0H40V184h65.07a8,8,0,0,1,7,4l16,28,16-28a8,8,0,0,1,7-4H216Z">
+                                    </path>
+                                </svg>
+                                Comments
+                            </a>
+                        </li>
+                        <li class="switch-indic">
+                            <a id="toggle_text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                                    viewBox="0 0 256 256">
+                                    <path
+                                        d="M239.18,97.26A16.38,16.38,0,0,0,224.92,86l-59-4.76L143.14,26.15a16.36,16.36,0,0,0-30.27,0L90.11,81.23,31.08,86a16.46,16.46,0,0,0-9.37,28.86l45,38.83L53,211.75a16.38,16.38,0,0,0,24.5,17.82L128,198.49l50.53,31.08A16.4,16.4,0,0,0,203,211.75l-13.76-58.07,45-38.83A16.43,16.43,0,0,0,239.18,97.26Zm-15.34,5.47-48.7,42a8,8,0,0,0-2.56,7.91l14.88,62.8a.37.37,0,0,1-.17.48c-.18.14-.23.11-.38,0l-54.72-33.65a8,8,0,0,0-8.38,0L69.09,215.94c-.15.09-.19.12-.38,0a.37.37,0,0,1-.17-.48l14.88-62.8a8,8,0,0,0-2.56-7.91l-48.7-42c-.12-.1-.23-.19-.13-.5s.18-.27.33-.29l63.92-5.16A8,8,0,0,0,103,91.86l24.62-59.61c.08-.17.11-.25.35-.25s.27.08.35.25L153,91.86a8,8,0,0,0,6.75,4.92l63.92,5.16c.15,0,.24,0,.33.29S224,102.63,223.84,102.73Z">
+                                    </path>
+                                </svg>
+                                Switch Mode
+                            </a>
+                            <div id="toggle">
+                                <button id="theme-switch">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="#575757">
+                                        <path
+                                            d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="#5f6368">
+                                        <path
+                                            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Acceuil photo (sacha)-->
+    <section class="parallax">
+        <img src="reference/background.png" class="parallax-layer parallaxbackground">
+        <img src="reference/front.png" class="parallax-layer parallaxfront">
+        <h2 id="text">By Star+Skat</h2>
+        <a id="link" href="#space-body">Know More Here</a>
+    </section>
+    <!---->
+
+    <!--Sert à pouvoir faire attérir le clic du parallax directement sur le body-->
+    <div id="space-body"></div>
+
+    <div id="haut">
+        <div id="gauche">
+            <img src="reference/imgs/bords.png" alt="bordsgauche">
+        </div>
+        <div id="body">
+
+            <h1 id="lore"> <b>THE LORE</b></h1>
+            <p>
+                The tale of the Curse Bound focuses on two mercenary best friends, known as : Star and Skat, a Warrior
+                and a Mage.
+                <br>
+                These fighters with troubled pasts filled with pain, loss and corruption will rise up to change
+                thenselves and this corrupt
+                world they are in.
+                <br><br>
+                STAR : The son of a failed mercenary born with mana deficiency, making him unable to cast spells or
+                certain skills
+                is a subject of the neglect of the kingdom. This young Warrior aims for absolute strength and wishes to
+                overcome
+                his setback at any cost.
+                <br><br>
+                SKAT ( Shanara ) : She's the descendent of the now forgotten Vampire Kingdom's Imperial Family
+                <br>
+                ( known as the Fangs Tribute ), and of the Moonlight Family ( the current Imperial Family ).
+                <br>
+                She was raised by a witch, and is determined to protect the ones close to her and to refine her powers.
+                <br><br>
+                In a world where anyone can have weird powers and skills, some are unable or develop defiencies making
+                them lowlives
+                in the eyes of the society, foring the to hide and become slaves.
+                But worse than that, the existences of hybrides ine the Human Empire is considered worse and may bring
+                death on the
+                parents of the product itself unless seen as useful, a rule placed by the Imperial Family..
+                <br>
+                The Imperial Family are the one ruling over the now Human Kingdom after the blood event, these royals
+                despises miwed bloods
+                and will kill and remove every remnant of hybrid they get their hands on unless one comes as talented or
+                useful to the
+                kingdom.
+                <br>
+                Thought they rule the Human Empire, their deeds shows teh treats of a Demon.
+            </p>
+        </div>
+        <div id="droite">
+            <img src="reference/imgs/bords2.png" alt="bordsdroite">
+        </div>
+    </div>
+
+    <!--Card ( sacha )-->
+    <div id="milieu">
+        <div id="milieugauche">
+            <img id="ggauche" src="reference/imgs/milieu2.png">
+        </div>
+        <div id="perso">
+
+            <div id="explication">
+                <h1 id="titreperso">MEET SOME CHARACTERS</h1>
+                <p class="textexplicatif">
+                    You have the opportunity to see a preview of some CurseBound characters.
+                    <br>
+                    <br>
+                    Among them, there are the main characters (Star and Skat)
+                    <br>as well as others
+                    character who will influence the story and be part
+                    <br>of the majority of the adventure.
+                    <br>
+                    <br>
+                    Not all the characters are here yet so come back often to see the new additions!
+                </p>
+            </div>
+            <div class="container">
+                <input type="radio" name="slide" id="c1">
+                <label for="c1" class="card">
+                    <div class="row">
+                        <div class="Icon">☆</div>
+                        <div class="desc">
+                        </div>
+                    </div>
+                </label>
+
+                <input type="radio" name="slide" id="c2">
+                <label for="c2" class="card">
+                    <div class="row">
+                        <div class="Icon">☆</div>
+                        <div class="desc">
+                        </div>
+                    </div>
+                </label>
+
+                <input type="radio" name="slide" id="c3">
+                <label for="c3" class="card">
+                    <div class="row">
+                        <div class="Icon">☆</div>
+                        <div class="desc">
+                        </div>
+                    </div>
+                </label>
+
+                <input type="radio" name="slide" id="c4">
+                <label for="c4" class="card">
+                    <div class="row">
+                        <div class="Icon">☆</div>
+                        <div class="desc">
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+        </div>
+        <div id="milieudroite">
+            <img id="ddroite" src="reference/imgs/milieu.png">
+        </div>
+    </div>
+    <!--Info sur sacha et derek-->
+    <div id="bas">
+        <div id="basgauche">
+            <img id="gggauche" src="reference/imgs/bas.png">
+        </div>
+        <div id="surnous">
+            <h1>ABOUT US</h1>
+            <div id="notgoofy">
+                <div id="skat">
+                    <div class="oc">
+                        <img src="reference/imgs/notgoofyocSKAT.png">
+                    </div>
+                    <div class="a_propos">
+                        <h1>01</h1>
+                        <p>
+                            - &nbsp;&nbsp; <b>Name</b> &nbsp;&nbsp;:&nbsp;&nbsp; Go as Skat
+                            <br>
+                            - &nbsp;&nbsp; <b>Age</b> &nbsp;&nbsp;:&nbsp;&nbsp; 18y/0
+                            <br>
+                            - &nbsp;&nbsp; <b>Gender</b> &nbsp;&nbsp;:&nbsp;&nbsp; Female
+                            <br>
+                            - &nbsp;&nbsp; <b>Statut</b> &nbsp;&nbsp;:&nbsp;&nbsp; Student
+                        </p>
+                    </div>
+                </div>
+                <div id="star">
+                    <div class="oc">
+                        <img src="reference/imgs/notgoofyocSTAR.png">
+                    </div>
+                    <div class="a_propos">
+                        <h1>02</h1>
+                        <p>
+                            - &nbsp;&nbsp; <b>Name</b> &nbsp;&nbsp;:&nbsp;&nbsp; Go as Star
+                            <br>
+                            - &nbsp;&nbsp; <b>Age</b> &nbsp;&nbsp;:&nbsp;&nbsp; 18y/0
+                            <br>
+                            - &nbsp;&nbsp; <b>Gender</b> &nbsp;&nbsp;:&nbsp;&nbsp; Male
+                            <br>
+                            - &nbsp;&nbsp; <b>Statut</b> &nbsp;&nbsp;:&nbsp;&nbsp; Student
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="separation">
+                <img src="reference/imgs/limite.png">
+            </div>
+            <div id="goofy">
+                <div id="skatou">
+                    <div class="parlote">
+                        <div class="oc">
+                            <img src="reference/imgs/goofyocSKAT.png">
+                        </div>
+                        <div class="a_propos">
+                            <h1><span class="debS">Skat</span>&nbsp;&nbsp;<span class="finS">confession</span></h1>
+                            <p class="on_verra">
+                                " &nbsp;I've started this Webtoon project on a whim just by looking at an Instagram
+                                real.
+                                You know those type of "&nbsp;What's your power by your month&nbsp;" real.
+                                I thought that would be fun to make some characters with powers like that.
+                                So yeah, here we are, making it trought it and <br> making my childish dream come true
+                                !&nbsp; "
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="starou">
+                    <div class="parlote">
+                        <div class="oc">
+                            <img src="reference/imgs/goofyocSTAR.png">
+                        </div>
+                        <div class="a_propos">
+                            <h1><span class="debS">Star</span>&nbsp;&nbsp;<span class="finS">confession</span></h1>
+                            <p class="on_verra">
+                                "&nbsp;To be honest i've always wanted to make some kind of anime or manga
+                                since i've been fan of shonen my whole life, and when Skat brought up
+                                the idea of making i was lowkey unsure but i thought :
+                                "&nbsp;screw it lessgo&nbsp;" and thats it.
+                                Hopefully the people will like it so i can flex it to my parents &nbsp;"
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="basdroite">
+            <img id="dddroite" src="reference/imgs/bas2.png">
+        </div>
+    </div>
+
+
+    <footer id="aboutus">
+        <div id="bannerend">
+            <h1 id="aboutus">CURSE☆BOUND</h1>
+            <p id="contact">--- > Follow/Contact Us < --- </p>
+                    <p id="mail">cursebound.off@gmail.com</p>
+                    <div class="reseaux">
+                        <a class="insta" href="https://www.instagram.com/_cursebound.off_?igsh=MXFsMjRpZXI2YXlwbg==">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="tiktok" href="https://www.tiktok.com/@_skat.exe_?is_from_webapp=1&sender_device=pc">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M224,72a48.05,48.05,0,0,1-48-48,8,8,0,0,0-8-8H128a8,8,0,0,0-8,8V156a20,20,0,1,1-28.57-18.08A8,8,0,0,0,96,130.69V88a8,8,0,0,0-9.4-7.88C50.91,86.48,24,119.1,24,156a76,76,0,0,0,152,0V116.29A103.25,103.25,0,0,0,224,128a8,8,0,0,0,8-8V80A8,8,0,0,0,224,72Zm-8,39.64a87.19,87.19,0,0,1-43.33-16.15A8,8,0,0,0,160,102v54a60,60,0,0,1-120,0c0-25.9,16.64-49.13,40-57.6v27.67A36,36,0,1,0,136,156V32h24.5A64.14,64.14,0,0,0,216,87.5Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="twitter" href="https://x.com/_Aft3r_H3ll_">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000"
+                                viewBox="0 0 256 256">
+                                <path
+                                    d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+        </div>
+    </footer>
+</body>
